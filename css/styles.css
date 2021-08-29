@@ -5,7 +5,7 @@ html {
 
 #title {
   background-color: #ff4c68;
-  color: #ffffff;
+  color: #fff;
 }
 
 h1 {
@@ -32,7 +32,7 @@ p {
 }
 
 .container-fluid {
-  padding: 2% 15%;
+  padding: 2% 15% 7%;
 }
 
 /* Navbar */
@@ -71,17 +71,21 @@ p {
 /* Title Image */
 .title-image {
   transform: rotate(25deg);
-  width: 60%;
+  width: 20%;
+  position: absolute;
+  right: 20%;
 }
 
 /* Features */
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .box {
   text-align: center;
-  padding: 5%;
+  padding: 4.5%;
 }
 
 #features i {
@@ -134,4 +138,34 @@ p {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* Call To Action */
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 2% 0 3%;
+}
+
+#cta h1 {
+  padding: 1% 10%;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+}
+
+.fa {
+  padding: 5% 10px 2%;
+}
+
+.fa:hover {
+  color: #ff4c68;
+  cursor: pointer;
+}
+
+#footer p {
+  padding-bottom: 5%;
 }
