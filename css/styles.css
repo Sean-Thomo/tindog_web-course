@@ -1,34 +1,37 @@
 body,
 html {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 #title {
   background-color: #ff4c68;
   color: #fff;
+  text-align: left;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Big Heading */
+.big-heading {
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
-h2 {
-  font-family: "Montserrat";
-  font-weight: bold;
+.section-heading {
   font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-p {
-  color: #8f8f8f;
+  line-height: normal;
 }
 
 .container-fluid {
@@ -78,13 +81,15 @@ p {
 
 /* Features */
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 .box {
-  text-align: center;
   padding: 4.5%;
 }
 
@@ -99,9 +104,14 @@ p {
 
 /* Testimonial Section */
 #testimonials {
-  text-align: center;
   background-color: #ff4c68;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
 }
 
 .testimonial-img {
@@ -110,14 +120,9 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 /* Press */
 #press {
   background-color: #ff4c68;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -129,8 +134,11 @@ p {
 /* Pricing Section*/
 #pricing {
   background-color: #fff;
-  padding: 7% 15%;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .card-middle {
@@ -143,23 +151,13 @@ p {
 
 /* Call To Action */
 #cta {
-  text-align: center;
   background-color: #ff4c68;
   color: #fff;
-  padding: 7% 15%;
-}
-
-.cta-heading {
-  font-family: "Montserrat";
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
 }
 
 /* Footer */
 #footer {
   background-color: #fff;
-  text-align: center;
 }
 
 .fa {
@@ -176,13 +174,33 @@ p {
 }
 
 @media (max-width: 1028px) {
+  p {
+    font-size: 2rem;
+  }
+
   #title {
     text-align: center;
+  }
+
+  .navbar-brand,
+  .feature-title {
+    font-size: 3rem;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   .title-image {
     position: static;
     transform: rotate(0);
     width: 60%;
+  }
+
+  .section-heading {
+    height: 100px;
+    line-height: normal;
+    margin: 4% 0 6%;
   }
 }
